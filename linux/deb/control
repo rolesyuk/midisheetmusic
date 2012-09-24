@@ -1,0 +1,18 @@
+Package: midisheetmusic
+Version: 2.4
+Section: sound
+Priority: optional
+Architecture: all
+Depends: libmono-system2.0-cil, libmono-winforms2.0-cil, timidity, alsa-base, alsa-utils
+Recommends: mono-gmcs
+Maintainer: Madhav Vaidyanathan <madhav_vaidy@users.sourceforge.net>
+Description: Midi Sheet Music Player
+ Midi Sheet Music is a free program that plays MIDI music files 
+ while highlighting the piano notes and sheet music notes.
+ It will be installed under the menu "Applications : Sound and Video".
+ Or, you can run it from the command line using /usr/bin/midisheetmusic.mono.exe.
+ This package depends on 
+ - The Mono.NET runtime (libmono-system2.0-cil, libmono-winforms2.0-cil)
+ - The Linux Sound Architecture (alsa-base, alsa-utils)
+ - The Timidity MIDI player (timidity)
+Homepage: http://midisheetmusic.sourceforge.net/

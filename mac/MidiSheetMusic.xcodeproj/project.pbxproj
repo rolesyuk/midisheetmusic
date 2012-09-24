@@ -1,0 +1,993 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		A9221A6E153BD9B00066AE54 /* help.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A9221A6D153BD9B00066AE54 /* help.rtf */; };
+		A98FB525153B2B9800D9E5E7 /* AccidSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4E4153B2B9800D9E5E7 /* AccidSymbol.m */; };
+		A98FB526153B2B9800D9E5E7 /* Array.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4E6153B2B9800D9E5E7 /* Array.m */; };
+		A98FB527153B2B9800D9E5E7 /* BarSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4E8153B2B9800D9E5E7 /* BarSymbol.m */; };
+		A98FB528153B2B9800D9E5E7 /* BlankSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4EA153B2B9800D9E5E7 /* BlankSymbol.m */; };
+		A98FB529153B2B9800D9E5E7 /* ChordSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4EC153B2B9800D9E5E7 /* ChordSymbol.m */; };
+		A98FB52A153B2B9800D9E5E7 /* ClefMeasures.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4EE153B2B9800D9E5E7 /* ClefMeasures.m */; };
+		A98FB52B153B2B9800D9E5E7 /* ClefSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4F0153B2B9800D9E5E7 /* ClefSymbol.m */; };
+		A98FB52C153B2B9800D9E5E7 /* FlippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4F2153B2B9800D9E5E7 /* FlippedView.m */; };
+		A98FB52D153B2B9800D9E5E7 /* InstrumentDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4F4153B2B9800D9E5E7 /* InstrumentDialog.m */; };
+		A98FB52E153B2B9800D9E5E7 /* KeySignature.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4F6153B2B9800D9E5E7 /* KeySignature.m */; };
+		A98FB52F153B2B9800D9E5E7 /* LyricSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4F8153B2B9800D9E5E7 /* LyricSymbol.m */; };
+		A98FB530153B2B9800D9E5E7 /* MidiEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4FA153B2B9800D9E5E7 /* MidiEvent.m */; };
+		A98FB531153B2B9800D9E5E7 /* MidiFile.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4FC153B2B9800D9E5E7 /* MidiFile.m */; };
+		A98FB532153B2B9800D9E5E7 /* MidiFileException.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4FE153B2B9800D9E5E7 /* MidiFileException.m */; };
+		A98FB533153B2B9800D9E5E7 /* MidiFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB500153B2B9800D9E5E7 /* MidiFileReader.m */; };
+		A98FB534153B2B9800D9E5E7 /* MidiNote.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB502153B2B9800D9E5E7 /* MidiNote.m */; };
+		A98FB535153B2B9800D9E5E7 /* MidiPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB505153B2B9800D9E5E7 /* MidiPlayer.m */; };
+		A98FB536153B2B9800D9E5E7 /* MidiSheetMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB507153B2B9800D9E5E7 /* MidiSheetMusic.m */; };
+		A98FB537153B2B9800D9E5E7 /* MidiTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB509153B2B9800D9E5E7 /* MidiTrack.m */; };
+		A98FB538153B2B9800D9E5E7 /* NoteColorDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB50C153B2B9800D9E5E7 /* NoteColorDialog.m */; };
+		A98FB539153B2B9800D9E5E7 /* Piano.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB50E153B2B9800D9E5E7 /* Piano.m */; };
+		A98FB53A153B2B9800D9E5E7 /* PlayMeasuresDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB510153B2B9800D9E5E7 /* PlayMeasuresDialog.m */; };
+		A98FB53B153B2B9800D9E5E7 /* RestSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB512153B2B9800D9E5E7 /* RestSymbol.m */; };
+		A98FB53C153B2B9800D9E5E7 /* SampleSongDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB514153B2B9800D9E5E7 /* SampleSongDialog.m */; };
+		A98FB53D153B2B9800D9E5E7 /* SheetMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB516153B2B9800D9E5E7 /* SheetMusic.m */; };
+		A98FB53E153B2B9800D9E5E7 /* SheetMusicWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB518153B2B9800D9E5E7 /* SheetMusicWindow.m */; };
+		A98FB53F153B2B9800D9E5E7 /* Staff.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB51A153B2B9800D9E5E7 /* Staff.m */; };
+		A98FB540153B2B9800D9E5E7 /* Stem.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB51C153B2B9800D9E5E7 /* Stem.m */; };
+		A98FB541153B2B9800D9E5E7 /* SymbolWidths.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB51E153B2B9800D9E5E7 /* SymbolWidths.m */; };
+		A98FB542153B2B9800D9E5E7 /* TimeSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB520153B2B9800D9E5E7 /* TimeSignature.m */; };
+		A98FB543153B2B9800D9E5E7 /* TimeSigSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB522153B2B9800D9E5E7 /* TimeSigSymbol.m */; };
+		A98FB544153B2B9800D9E5E7 /* WhiteNote.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB524153B2B9800D9E5E7 /* WhiteNote.m */; };
+		A98FB554153B2BED00D9E5E7 /* bass.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB545153B2BED00D9E5E7 /* bass.png */; };
+		A98FB555153B2BED00D9E5E7 /* eight.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB546153B2BED00D9E5E7 /* eight.png */; };
+		A98FB556153B2BED00D9E5E7 /* fastforward.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB547153B2BED00D9E5E7 /* fastforward.png */; };
+		A98FB557153B2BED00D9E5E7 /* four.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB548153B2BED00D9E5E7 /* four.png */; };
+		A98FB558153B2BED00D9E5E7 /* nine.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB549153B2BED00D9E5E7 /* nine.png */; };
+		A98FB559153B2BED00D9E5E7 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB54A153B2BED00D9E5E7 /* pause.png */; };
+		A98FB55A153B2BED00D9E5E7 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB54B153B2BED00D9E5E7 /* play.png */; };
+		A98FB55B153B2BED00D9E5E7 /* rewind.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB54C153B2BED00D9E5E7 /* rewind.png */; };
+		A98FB55C153B2BED00D9E5E7 /* six.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB54D153B2BED00D9E5E7 /* six.png */; };
+		A98FB55D153B2BED00D9E5E7 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB54E153B2BED00D9E5E7 /* stop.png */; };
+		A98FB55E153B2BED00D9E5E7 /* three.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB54F153B2BED00D9E5E7 /* three.png */; };
+		A98FB55F153B2BED00D9E5E7 /* treble.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB550153B2BED00D9E5E7 /* treble.png */; };
+		A98FB560153B2BED00D9E5E7 /* twelve.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB551153B2BED00D9E5E7 /* twelve.png */; };
+		A98FB561153B2BED00D9E5E7 /* two.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB552153B2BED00D9E5E7 /* two.png */; };
+		A98FB562153B2BED00D9E5E7 /* volume.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FB553153B2BED00D9E5E7 /* volume.png */; };
+		A98FB5A7153B2C5F00D9E5E7 /* Bach__Invention_No._13.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB564153B2C5F00D9E5E7 /* Bach__Invention_No._13.mid */; };
+		A98FB5A8153B2C5F00D9E5E7 /* Bach__Minuet_in_G_major.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB565153B2C5F00D9E5E7 /* Bach__Minuet_in_G_major.mid */; };
+		A98FB5A9153B2C5F00D9E5E7 /* Bach__Musette_in_D_major.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB566153B2C5F00D9E5E7 /* Bach__Musette_in_D_major.mid */; };
+		A98FB5AA153B2C5F00D9E5E7 /* Bach__Prelude_in_C_major.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB567153B2C5F00D9E5E7 /* Bach__Prelude_in_C_major.mid */; };
+		A98FB5AB153B2C5F00D9E5E7 /* Beethoven__Fur_Elise.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB568153B2C5F00D9E5E7 /* Beethoven__Fur_Elise.mid */; };
+		A98FB5AC153B2C5F00D9E5E7 /* Beethoven__Minuet_in_G_major.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB569153B2C5F00D9E5E7 /* Beethoven__Minuet_in_G_major.mid */; };
+		A98FB5AD153B2C5F00D9E5E7 /* Beethoven__Moonlight_Sonata.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB56A153B2C5F00D9E5E7 /* Beethoven__Moonlight_Sonata.mid */; };
+		A98FB5AE153B2C5F00D9E5E7 /* Beethoven__Sonata_Pathetique_2nd_Mov.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB56B153B2C5F00D9E5E7 /* Beethoven__Sonata_Pathetique_2nd_Mov.mid */; };
+		A98FB5AF153B2C5F00D9E5E7 /* Bizet__Habanera_from_Carmen.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB56C153B2C5F00D9E5E7 /* Bizet__Habanera_from_Carmen.mid */; };
+		A98FB5B0153B2C5F00D9E5E7 /* Borodin__Polovstian_Dance.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB56D153B2C5F00D9E5E7 /* Borodin__Polovstian_Dance.mid */; };
+		A98FB5B1153B2C5F00D9E5E7 /* Brahms__Hungarian_Dance_No._5.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB56E153B2C5F00D9E5E7 /* Brahms__Hungarian_Dance_No._5.mid */; };
+		A98FB5B2153B2C5F00D9E5E7 /* Brahms__Waltz_No._15_in_A-flat_major.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB56F153B2C5F00D9E5E7 /* Brahms__Waltz_No._15_in_A-flat_major.mid */; };
+		A98FB5B3153B2C5F00D9E5E7 /* Brahms__Waltz_No._9_in_D_minor.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB570153B2C5F00D9E5E7 /* Brahms__Waltz_No._9_in_D_minor.mid */; };
+		A98FB5B4153B2C5F00D9E5E7 /* Chopin__Minute_Waltz_Op._64_No._1_in_D-flat_major.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB571153B2C5F00D9E5E7 /* Chopin__Minute_Waltz_Op._64_No._1_in_D-flat_major.mid */; };
+		A98FB5B5153B2C5F00D9E5E7 /* Chopin__Nocturne_in_C_minor.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB572153B2C5F00D9E5E7 /* Chopin__Nocturne_in_C_minor.mid */; };
+		A98FB5B6153B2C5F00D9E5E7 /* Chopin__Nocturne_Op._9_No._1_in_B-flat_minor.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB573153B2C5F00D9E5E7 /* Chopin__Nocturne_Op._9_No._1_in_B-flat_minor.mid */; };
+		A98FB5B7153B2C5F00D9E5E7 /* Chopin__Nocturne_Op._9_No._2_in_E-flat_major.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB574153B2C5F00D9E5E7 /* Chopin__Nocturne_Op._9_No._2_in_E-flat_major.mid */; };
+		A98FB5B8153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._20_in_C_minor.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB575153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._20_in_C_minor.mid */; };
+		A98FB5B9153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._4_in_E_minor.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB576153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._4_in_E_minor.mid */; };
+		A98FB5BA153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._6_in_B_minor.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB577153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._6_in_B_minor.mid */; };
+		A98FB5BB153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._7_in_A_major.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB578153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._7_in_A_major.mid */; };
+		A98FB5BC153B2C5F00D9E5E7 /* Chopin__Waltz_Op._64_No._2_in_Csharp_minor.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB579153B2C5F00D9E5E7 /* Chopin__Waltz_Op._64_No._2_in_Csharp_minor.mid */; };
+		A98FB5BD153B2C5F00D9E5E7 /* Clementi__Sonatina_Op._36_No._1.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB57A153B2C5F00D9E5E7 /* Clementi__Sonatina_Op._36_No._1.mid */; };
+		A98FB5BE153B2C5F00D9E5E7 /* Easy_Songs__Brahms_Lullaby.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB57B153B2C5F00D9E5E7 /* Easy_Songs__Brahms_Lullaby.mid */; };
+		A98FB5BF153B2C5F00D9E5E7 /* Easy_Songs__Greensleeves.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB57C153B2C5F00D9E5E7 /* Easy_Songs__Greensleeves.mid */; };
+		A98FB5C0153B2C5F00D9E5E7 /* Easy_Songs__Jingle_Bells.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB57D153B2C5F00D9E5E7 /* Easy_Songs__Jingle_Bells.mid */; };
+		A98FB5C1153B2C5F00D9E5E7 /* Easy_Songs__Silent_Night.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB57E153B2C5F00D9E5E7 /* Easy_Songs__Silent_Night.mid */; };
+		A98FB5C2153B2C5F00D9E5E7 /* Easy_Songs__Twinkle_Twinkle_Little_Star.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB57F153B2C5F00D9E5E7 /* Easy_Songs__Twinkle_Twinkle_Little_Star.mid */; };
+		A98FB5C3153B2C5F00D9E5E7 /* Field__Nocturne_in_B-flat_major.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB580153B2C5F00D9E5E7 /* Field__Nocturne_in_B-flat_major.mid */; };
+		A98FB5C4153B2C5F00D9E5E7 /* Grieg__Canon_Op._38_No._8.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB581153B2C5F00D9E5E7 /* Grieg__Canon_Op._38_No._8.mid */; };
+		A98FB5C5153B2C5F00D9E5E7 /* Grieg__Peer_Gynt_Morning.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB582153B2C5F00D9E5E7 /* Grieg__Peer_Gynt_Morning.mid */; };
+		A98FB5C6153B2C5F00D9E5E7 /* Handel__Sarabande_in_D_minor.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB583153B2C5F00D9E5E7 /* Handel__Sarabande_in_D_minor.mid */; };
+		A98FB5C7153B2C5F00D9E5E7 /* Liadov__Prelude_Op._11_in_B_minor.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB584153B2C5F00D9E5E7 /* Liadov__Prelude_Op._11_in_B_minor.mid */; };
+		A98FB5C8153B2C5F00D9E5E7 /* MacDowelll__To_a_Wild_Rose.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB585153B2C5F00D9E5E7 /* MacDowelll__To_a_Wild_Rose.mid */; };
+		A98FB5C9153B2C5F00D9E5E7 /* Massenet__Elegy_in_E_minor.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB586153B2C5F00D9E5E7 /* Massenet__Elegy_in_E_minor.mid */; };
+		A98FB5CA153B2C5F00D9E5E7 /* Mendelssohn__Venetian_Boat_Song_Op._19b_No._6.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB587153B2C5F00D9E5E7 /* Mendelssohn__Venetian_Boat_Song_Op._19b_No._6.mid */; };
+		A98FB5CB153B2C5F00D9E5E7 /* Mendelssohn__Wedding_March.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB588153B2C5F00D9E5E7 /* Mendelssohn__Wedding_March.mid */; };
+		A98FB5CC153B2C5F00D9E5E7 /* Mozart__Aria_from_Don_Giovanni.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB589153B2C5F00D9E5E7 /* Mozart__Aria_from_Don_Giovanni.mid */; };
+		A98FB5CD153B2C5F00D9E5E7 /* Mozart__Eine_Kleine_Nachtmusik.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB58A153B2C5F00D9E5E7 /* Mozart__Eine_Kleine_Nachtmusik.mid */; };
+		A98FB5CE153B2C5F00D9E5E7 /* Mozart__Fantasy_No._3_in_D_minor.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB58B153B2C5F00D9E5E7 /* Mozart__Fantasy_No._3_in_D_minor.mid */; };
+		A98FB5CF153B2C5F00D9E5E7 /* Mozart__Minuet_from_Don_Juan.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB58C153B2C5F00D9E5E7 /* Mozart__Minuet_from_Don_Juan.mid */; };
+		A98FB5D0153B2C5F00D9E5E7 /* Mozart__Rondo_Alla_Turca.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB58D153B2C5F00D9E5E7 /* Mozart__Rondo_Alla_Turca.mid */; };
+		A98FB5D1153B2C5F00D9E5E7 /* Mozart__Sonata_K.545_in_C_major.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB58E153B2C5F00D9E5E7 /* Mozart__Sonata_K.545_in_C_major.mid */; };
+		A98FB5D2153B2C5F00D9E5E7 /* Offenbach__Barcarolle_from_The_Tales_of_Hoffmann.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB58F153B2C5F00D9E5E7 /* Offenbach__Barcarolle_from_The_Tales_of_Hoffmann.mid */; };
+		A98FB5D3153B2C5F00D9E5E7 /* Pachelbel__Canon_in_D_major.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB590153B2C5F00D9E5E7 /* Pachelbel__Canon_in_D_major.mid */; };
+		A98FB5D4153B2C5F00D9E5E7 /* Prokofiev__Peter_and_the_Wolf.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB591153B2C5F00D9E5E7 /* Prokofiev__Peter_and_the_Wolf.mid */; };
+		A98FB5D5153B2C5F00D9E5E7 /* Puccini__O_Mio_Babbino_Caro.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB592153B2C5F00D9E5E7 /* Puccini__O_Mio_Babbino_Caro.mid */; };
+		A98FB5D6153B2C5F00D9E5E7 /* Rebikov__Valse_Melancolique_Op._2_No._3.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB593153B2C5F00D9E5E7 /* Rebikov__Valse_Melancolique_Op._2_No._3.mid */; };
+		A98FB5D7153B2C5F00D9E5E7 /* Saint-Saens__The_Swan.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB594153B2C5F00D9E5E7 /* Saint-Saens__The_Swan.mid */; };
+		A98FB5D8153B2C5F00D9E5E7 /* Satie__Gnossienne_No._1.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB595153B2C5F00D9E5E7 /* Satie__Gnossienne_No._1.mid */; };
+		A98FB5D9153B2C5F00D9E5E7 /* Satie__Gymnopedie_No._1.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB596153B2C5F00D9E5E7 /* Satie__Gymnopedie_No._1.mid */; };
+		A98FB5DA153B2C5F00D9E5E7 /* Schubert__Impromptu_Op._90_No._4_in_A-flat_major.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB597153B2C5F00D9E5E7 /* Schubert__Impromptu_Op._90_No._4_in_A-flat_major.mid */; };
+		A98FB5DB153B2C5F00D9E5E7 /* Schubert__Moment_Musicaux_No._1_in_C_major.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB598153B2C5F00D9E5E7 /* Schubert__Moment_Musicaux_No._1_in_C_major.mid */; };
+		A98FB5DC153B2C5F00D9E5E7 /* Schubert__Moment_Musicaux_No._3_in_F_minor.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB599153B2C5F00D9E5E7 /* Schubert__Moment_Musicaux_No._3_in_F_minor.mid */; };
+		A98FB5DD153B2C5F00D9E5E7 /* Schubert__Serenade_in_D_minor.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB59A153B2C5F00D9E5E7 /* Schubert__Serenade_in_D_minor.mid */; };
+		A98FB5DE153B2C5F00D9E5E7 /* Schumann__Scenes_From_Childhood_Op._15_No._12.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB59B153B2C5F00D9E5E7 /* Schumann__Scenes_From_Childhood_Op._15_No._12.mid */; };
+		A98FB5DF153B2C5F00D9E5E7 /* Schumann__The_Happy_Farmer.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB59C153B2C5F00D9E5E7 /* Schumann__The_Happy_Farmer.mid */; };
+		A98FB5E0153B2C5F00D9E5E7 /* Strauss__The_Blue_Danube_Waltz.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB59D153B2C5F00D9E5E7 /* Strauss__The_Blue_Danube_Waltz.mid */; };
+		A98FB5E1153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Old_French_Song.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB59E153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Old_French_Song.mid */; };
+		A98FB5E2153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Polka.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB59F153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Polka.mid */; };
+		A98FB5E3153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Waltz.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB5A0153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Waltz.mid */; };
+		A98FB5E4153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Dance_of_the_Reed_Flutes.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB5A1153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Dance_of_the_Reed_Flutes.mid */; };
+		A98FB5E5153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Dance_of_the_Sugar_Plum_Fairies.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB5A2153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Dance_of_the_Sugar_Plum_Fairies.mid */; };
+		A98FB5E6153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_March_of_the_Toy_Soldiers.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB5A3153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_March_of_the_Toy_Soldiers.mid */; };
+		A98FB5E7153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Waltz_of_the_Flowers.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB5A4153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Waltz_of_the_Flowers.mid */; };
+		A98FB5E8153B2C5F00D9E5E7 /* Tchaikovsky__Swan_Lake.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB5A5153B2C5F00D9E5E7 /* Tchaikovsky__Swan_Lake.mid */; };
+		A98FB5E9153B2C5F00D9E5E7 /* Verdi__La_Donna_e_Mobile.mid in Resources */ = {isa = PBXBuildFile; fileRef = A98FB5A6153B2C5F00D9E5E7 /* Verdi__La_Donna_e_Mobile.mid */; };
+		A98FB5EB153B2C7F00D9E5E7 /* NotePair.icns in Resources */ = {isa = PBXBuildFile; fileRef = A98FB5EA153B2C7F00D9E5E7 /* NotePair.icns */; };
+		A98FB605153B30FA00D9E5E7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98FB604153B30FA00D9E5E7 /* SenTestingKit.framework */; };
+		A98FB609153B311400D9E5E7 /* UnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB608153B311400D9E5E7 /* UnitTest.m */; };
+		A98FB60B153B31AB00D9E5E7 /* AccidSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4E4153B2B9800D9E5E7 /* AccidSymbol.m */; };
+		A98FB60C153B31AB00D9E5E7 /* Array.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4E6153B2B9800D9E5E7 /* Array.m */; };
+		A98FB60D153B31AB00D9E5E7 /* BarSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4E8153B2B9800D9E5E7 /* BarSymbol.m */; };
+		A98FB60E153B31AB00D9E5E7 /* BlankSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4EA153B2B9800D9E5E7 /* BlankSymbol.m */; };
+		A98FB60F153B31AB00D9E5E7 /* ChordSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4EC153B2B9800D9E5E7 /* ChordSymbol.m */; };
+		A98FB610153B31AB00D9E5E7 /* ClefMeasures.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4EE153B2B9800D9E5E7 /* ClefMeasures.m */; };
+		A98FB611153B31AB00D9E5E7 /* ClefSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4F0153B2B9800D9E5E7 /* ClefSymbol.m */; };
+		A98FB612153B31AB00D9E5E7 /* KeySignature.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4F6153B2B9800D9E5E7 /* KeySignature.m */; };
+		A98FB613153B31AB00D9E5E7 /* LyricSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4F8153B2B9800D9E5E7 /* LyricSymbol.m */; };
+		A98FB614153B31AB00D9E5E7 /* MidiEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4FA153B2B9800D9E5E7 /* MidiEvent.m */; };
+		A98FB615153B31AB00D9E5E7 /* MidiFile.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4FC153B2B9800D9E5E7 /* MidiFile.m */; };
+		A98FB616153B31AB00D9E5E7 /* MidiFileException.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB4FE153B2B9800D9E5E7 /* MidiFileException.m */; };
+		A98FB617153B31AB00D9E5E7 /* MidiFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB500153B2B9800D9E5E7 /* MidiFileReader.m */; };
+		A98FB618153B31AB00D9E5E7 /* MidiNote.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB502153B2B9800D9E5E7 /* MidiNote.m */; };
+		A98FB619153B31AB00D9E5E7 /* MidiTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB509153B2B9800D9E5E7 /* MidiTrack.m */; };
+		A98FB61A153B31AB00D9E5E7 /* RestSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB512153B2B9800D9E5E7 /* RestSymbol.m */; };
+		A98FB61B153B31AB00D9E5E7 /* Stem.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB51C153B2B9800D9E5E7 /* Stem.m */; };
+		A98FB61C153B31AB00D9E5E7 /* SymbolWidths.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB51E153B2B9800D9E5E7 /* SymbolWidths.m */; };
+		A98FB61D153B31AB00D9E5E7 /* TimeSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB520153B2B9800D9E5E7 /* TimeSignature.m */; };
+		A98FB61E153B31AB00D9E5E7 /* TimeSigSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB522153B2B9800D9E5E7 /* TimeSigSymbol.m */; };
+		A98FB61F153B31AB00D9E5E7 /* WhiteNote.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB524153B2B9800D9E5E7 /* WhiteNote.m */; };
+		A98FB62C153B31ED00D9E5E7 /* SheetMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB516153B2B9800D9E5E7 /* SheetMusic.m */; };
+		A98FB631153B320000D9E5E7 /* Staff.m in Sources */ = {isa = PBXBuildFile; fileRef = A98FB51A153B2B9800D9E5E7 /* Staff.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* MidiSheetMusic_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiSheetMusic_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* MidiSheetMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidiSheetMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9221A6D153BD9B00066AE54 /* help.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = help.rtf; sourceTree = "<group>"; };
+		A98FB4E3153B2B9800D9E5E7 /* AccidSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccidSymbol.h; sourceTree = "<group>"; };
+		A98FB4E4153B2B9800D9E5E7 /* AccidSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccidSymbol.m; sourceTree = "<group>"; };
+		A98FB4E5153B2B9800D9E5E7 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		A98FB4E6153B2B9800D9E5E7 /* Array.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Array.m; sourceTree = "<group>"; };
+		A98FB4E7153B2B9800D9E5E7 /* BarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarSymbol.h; sourceTree = "<group>"; };
+		A98FB4E8153B2B9800D9E5E7 /* BarSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarSymbol.m; sourceTree = "<group>"; };
+		A98FB4E9153B2B9800D9E5E7 /* BlankSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlankSymbol.h; sourceTree = "<group>"; };
+		A98FB4EA153B2B9800D9E5E7 /* BlankSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlankSymbol.m; sourceTree = "<group>"; };
+		A98FB4EB153B2B9800D9E5E7 /* ChordSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChordSymbol.h; sourceTree = "<group>"; };
+		A98FB4EC153B2B9800D9E5E7 /* ChordSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChordSymbol.m; sourceTree = "<group>"; };
+		A98FB4ED153B2B9800D9E5E7 /* ClefMeasures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClefMeasures.h; sourceTree = "<group>"; };
+		A98FB4EE153B2B9800D9E5E7 /* ClefMeasures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClefMeasures.m; sourceTree = "<group>"; };
+		A98FB4EF153B2B9800D9E5E7 /* ClefSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClefSymbol.h; sourceTree = "<group>"; };
+		A98FB4F0153B2B9800D9E5E7 /* ClefSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClefSymbol.m; sourceTree = "<group>"; };
+		A98FB4F1153B2B9800D9E5E7 /* FlippedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlippedView.h; sourceTree = "<group>"; };
+		A98FB4F2153B2B9800D9E5E7 /* FlippedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlippedView.m; sourceTree = "<group>"; };
+		A98FB4F3153B2B9800D9E5E7 /* InstrumentDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstrumentDialog.h; sourceTree = "<group>"; };
+		A98FB4F4153B2B9800D9E5E7 /* InstrumentDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstrumentDialog.m; sourceTree = "<group>"; };
+		A98FB4F5153B2B9800D9E5E7 /* KeySignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeySignature.h; sourceTree = "<group>"; };
+		A98FB4F6153B2B9800D9E5E7 /* KeySignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeySignature.m; sourceTree = "<group>"; };
+		A98FB4F7153B2B9800D9E5E7 /* LyricSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricSymbol.h; sourceTree = "<group>"; };
+		A98FB4F8153B2B9800D9E5E7 /* LyricSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricSymbol.m; sourceTree = "<group>"; };
+		A98FB4F9153B2B9800D9E5E7 /* MidiEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiEvent.h; sourceTree = "<group>"; };
+		A98FB4FA153B2B9800D9E5E7 /* MidiEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiEvent.m; sourceTree = "<group>"; };
+		A98FB4FB153B2B9800D9E5E7 /* MidiFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiFile.h; sourceTree = "<group>"; };
+		A98FB4FC153B2B9800D9E5E7 /* MidiFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiFile.m; sourceTree = "<group>"; };
+		A98FB4FD153B2B9800D9E5E7 /* MidiFileException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiFileException.h; sourceTree = "<group>"; };
+		A98FB4FE153B2B9800D9E5E7 /* MidiFileException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiFileException.m; sourceTree = "<group>"; };
+		A98FB4FF153B2B9800D9E5E7 /* MidiFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiFileReader.h; sourceTree = "<group>"; };
+		A98FB500153B2B9800D9E5E7 /* MidiFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiFileReader.m; sourceTree = "<group>"; };
+		A98FB501153B2B9800D9E5E7 /* MidiNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiNote.h; sourceTree = "<group>"; };
+		A98FB502153B2B9800D9E5E7 /* MidiNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiNote.m; sourceTree = "<group>"; };
+		A98FB503153B2B9800D9E5E7 /* MidiOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiOptions.h; sourceTree = "<group>"; };
+		A98FB504153B2B9800D9E5E7 /* MidiPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiPlayer.h; sourceTree = "<group>"; };
+		A98FB505153B2B9800D9E5E7 /* MidiPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiPlayer.m; sourceTree = "<group>"; };
+		A98FB506153B2B9800D9E5E7 /* MidiSheetMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiSheetMusic.h; sourceTree = "<group>"; };
+		A98FB507153B2B9800D9E5E7 /* MidiSheetMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiSheetMusic.m; sourceTree = "<group>"; };
+		A98FB508153B2B9800D9E5E7 /* MidiTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiTrack.h; sourceTree = "<group>"; };
+		A98FB509153B2B9800D9E5E7 /* MidiTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiTrack.m; sourceTree = "<group>"; };
+		A98FB50A153B2B9800D9E5E7 /* MusicSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicSymbol.h; sourceTree = "<group>"; };
+		A98FB50B153B2B9800D9E5E7 /* NoteColorDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteColorDialog.h; sourceTree = "<group>"; };
+		A98FB50C153B2B9800D9E5E7 /* NoteColorDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteColorDialog.m; sourceTree = "<group>"; };
+		A98FB50D153B2B9800D9E5E7 /* Piano.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piano.h; sourceTree = "<group>"; };
+		A98FB50E153B2B9800D9E5E7 /* Piano.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piano.m; sourceTree = "<group>"; };
+		A98FB50F153B2B9800D9E5E7 /* PlayMeasuresDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayMeasuresDialog.h; sourceTree = "<group>"; };
+		A98FB510153B2B9800D9E5E7 /* PlayMeasuresDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayMeasuresDialog.m; sourceTree = "<group>"; };
+		A98FB511153B2B9800D9E5E7 /* RestSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestSymbol.h; sourceTree = "<group>"; };
+		A98FB512153B2B9800D9E5E7 /* RestSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestSymbol.m; sourceTree = "<group>"; };
+		A98FB513153B2B9800D9E5E7 /* SampleSongDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleSongDialog.h; sourceTree = "<group>"; };
+		A98FB514153B2B9800D9E5E7 /* SampleSongDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleSongDialog.m; sourceTree = "<group>"; };
+		A98FB515153B2B9800D9E5E7 /* SheetMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SheetMusic.h; sourceTree = "<group>"; };
+		A98FB516153B2B9800D9E5E7 /* SheetMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SheetMusic.m; sourceTree = "<group>"; };
+		A98FB517153B2B9800D9E5E7 /* SheetMusicWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SheetMusicWindow.h; sourceTree = "<group>"; };
+		A98FB518153B2B9800D9E5E7 /* SheetMusicWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SheetMusicWindow.m; sourceTree = "<group>"; };
+		A98FB519153B2B9800D9E5E7 /* Staff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Staff.h; sourceTree = "<group>"; };
+		A98FB51A153B2B9800D9E5E7 /* Staff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Staff.m; sourceTree = "<group>"; };
+		A98FB51B153B2B9800D9E5E7 /* Stem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stem.h; sourceTree = "<group>"; };
+		A98FB51C153B2B9800D9E5E7 /* Stem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stem.m; sourceTree = "<group>"; };
+		A98FB51D153B2B9800D9E5E7 /* SymbolWidths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolWidths.h; sourceTree = "<group>"; };
+		A98FB51E153B2B9800D9E5E7 /* SymbolWidths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolWidths.m; sourceTree = "<group>"; };
+		A98FB51F153B2B9800D9E5E7 /* TimeSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSignature.h; sourceTree = "<group>"; };
+		A98FB520153B2B9800D9E5E7 /* TimeSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeSignature.m; sourceTree = "<group>"; };
+		A98FB521153B2B9800D9E5E7 /* TimeSigSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSigSymbol.h; sourceTree = "<group>"; };
+		A98FB522153B2B9800D9E5E7 /* TimeSigSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeSigSymbol.m; sourceTree = "<group>"; };
+		A98FB523153B2B9800D9E5E7 /* WhiteNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteNote.h; sourceTree = "<group>"; };
+		A98FB524153B2B9800D9E5E7 /* WhiteNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteNote.m; sourceTree = "<group>"; };
+		A98FB545153B2BED00D9E5E7 /* bass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass.png; sourceTree = "<group>"; };
+		A98FB546153B2BED00D9E5E7 /* eight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eight.png; sourceTree = "<group>"; };
+		A98FB547153B2BED00D9E5E7 /* fastforward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fastforward.png; sourceTree = "<group>"; };
+		A98FB548153B2BED00D9E5E7 /* four.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = four.png; sourceTree = "<group>"; };
+		A98FB549153B2BED00D9E5E7 /* nine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nine.png; sourceTree = "<group>"; };
+		A98FB54A153B2BED00D9E5E7 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		A98FB54B153B2BED00D9E5E7 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		A98FB54C153B2BED00D9E5E7 /* rewind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rewind.png; sourceTree = "<group>"; };
+		A98FB54D153B2BED00D9E5E7 /* six.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = six.png; sourceTree = "<group>"; };
+		A98FB54E153B2BED00D9E5E7 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		A98FB54F153B2BED00D9E5E7 /* three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = three.png; sourceTree = "<group>"; };
+		A98FB550153B2BED00D9E5E7 /* treble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treble.png; sourceTree = "<group>"; };
+		A98FB551153B2BED00D9E5E7 /* twelve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twelve.png; sourceTree = "<group>"; };
+		A98FB552153B2BED00D9E5E7 /* two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = two.png; sourceTree = "<group>"; };
+		A98FB553153B2BED00D9E5E7 /* volume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume.png; sourceTree = "<group>"; };
+		A98FB564153B2C5F00D9E5E7 /* Bach__Invention_No._13.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Bach__Invention_No._13.mid; sourceTree = "<group>"; };
+		A98FB565153B2C5F00D9E5E7 /* Bach__Minuet_in_G_major.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Bach__Minuet_in_G_major.mid; sourceTree = "<group>"; };
+		A98FB566153B2C5F00D9E5E7 /* Bach__Musette_in_D_major.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Bach__Musette_in_D_major.mid; sourceTree = "<group>"; };
+		A98FB567153B2C5F00D9E5E7 /* Bach__Prelude_in_C_major.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Bach__Prelude_in_C_major.mid; sourceTree = "<group>"; };
+		A98FB568153B2C5F00D9E5E7 /* Beethoven__Fur_Elise.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Beethoven__Fur_Elise.mid; sourceTree = "<group>"; };
+		A98FB569153B2C5F00D9E5E7 /* Beethoven__Minuet_in_G_major.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Beethoven__Minuet_in_G_major.mid; sourceTree = "<group>"; };
+		A98FB56A153B2C5F00D9E5E7 /* Beethoven__Moonlight_Sonata.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Beethoven__Moonlight_Sonata.mid; sourceTree = "<group>"; };
+		A98FB56B153B2C5F00D9E5E7 /* Beethoven__Sonata_Pathetique_2nd_Mov.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Beethoven__Sonata_Pathetique_2nd_Mov.mid; sourceTree = "<group>"; };
+		A98FB56C153B2C5F00D9E5E7 /* Bizet__Habanera_from_Carmen.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Bizet__Habanera_from_Carmen.mid; sourceTree = "<group>"; };
+		A98FB56D153B2C5F00D9E5E7 /* Borodin__Polovstian_Dance.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Borodin__Polovstian_Dance.mid; sourceTree = "<group>"; };
+		A98FB56E153B2C5F00D9E5E7 /* Brahms__Hungarian_Dance_No._5.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Brahms__Hungarian_Dance_No._5.mid; sourceTree = "<group>"; };
+		A98FB56F153B2C5F00D9E5E7 /* Brahms__Waltz_No._15_in_A-flat_major.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Brahms__Waltz_No._15_in_A-flat_major.mid"; sourceTree = "<group>"; };
+		A98FB570153B2C5F00D9E5E7 /* Brahms__Waltz_No._9_in_D_minor.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Brahms__Waltz_No._9_in_D_minor.mid; sourceTree = "<group>"; };
+		A98FB571153B2C5F00D9E5E7 /* Chopin__Minute_Waltz_Op._64_No._1_in_D-flat_major.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Chopin__Minute_Waltz_Op._64_No._1_in_D-flat_major.mid"; sourceTree = "<group>"; };
+		A98FB572153B2C5F00D9E5E7 /* Chopin__Nocturne_in_C_minor.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Chopin__Nocturne_in_C_minor.mid; sourceTree = "<group>"; };
+		A98FB573153B2C5F00D9E5E7 /* Chopin__Nocturne_Op._9_No._1_in_B-flat_minor.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Chopin__Nocturne_Op._9_No._1_in_B-flat_minor.mid"; sourceTree = "<group>"; };
+		A98FB574153B2C5F00D9E5E7 /* Chopin__Nocturne_Op._9_No._2_in_E-flat_major.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Chopin__Nocturne_Op._9_No._2_in_E-flat_major.mid"; sourceTree = "<group>"; };
+		A98FB575153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._20_in_C_minor.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Chopin__Prelude_Op._28_No._20_in_C_minor.mid; sourceTree = "<group>"; };
+		A98FB576153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._4_in_E_minor.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Chopin__Prelude_Op._28_No._4_in_E_minor.mid; sourceTree = "<group>"; };
+		A98FB577153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._6_in_B_minor.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Chopin__Prelude_Op._28_No._6_in_B_minor.mid; sourceTree = "<group>"; };
+		A98FB578153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._7_in_A_major.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Chopin__Prelude_Op._28_No._7_in_A_major.mid; sourceTree = "<group>"; };
+		A98FB579153B2C5F00D9E5E7 /* Chopin__Waltz_Op._64_No._2_in_Csharp_minor.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Chopin__Waltz_Op._64_No._2_in_Csharp_minor.mid; sourceTree = "<group>"; };
+		A98FB57A153B2C5F00D9E5E7 /* Clementi__Sonatina_Op._36_No._1.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Clementi__Sonatina_Op._36_No._1.mid; sourceTree = "<group>"; };
+		A98FB57B153B2C5F00D9E5E7 /* Easy_Songs__Brahms_Lullaby.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Easy_Songs__Brahms_Lullaby.mid; sourceTree = "<group>"; };
+		A98FB57C153B2C5F00D9E5E7 /* Easy_Songs__Greensleeves.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Easy_Songs__Greensleeves.mid; sourceTree = "<group>"; };
+		A98FB57D153B2C5F00D9E5E7 /* Easy_Songs__Jingle_Bells.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Easy_Songs__Jingle_Bells.mid; sourceTree = "<group>"; };
+		A98FB57E153B2C5F00D9E5E7 /* Easy_Songs__Silent_Night.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Easy_Songs__Silent_Night.mid; sourceTree = "<group>"; };
+		A98FB57F153B2C5F00D9E5E7 /* Easy_Songs__Twinkle_Twinkle_Little_Star.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Easy_Songs__Twinkle_Twinkle_Little_Star.mid; sourceTree = "<group>"; };
+		A98FB580153B2C5F00D9E5E7 /* Field__Nocturne_in_B-flat_major.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Field__Nocturne_in_B-flat_major.mid"; sourceTree = "<group>"; };
+		A98FB581153B2C5F00D9E5E7 /* Grieg__Canon_Op._38_No._8.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Grieg__Canon_Op._38_No._8.mid; sourceTree = "<group>"; };
+		A98FB582153B2C5F00D9E5E7 /* Grieg__Peer_Gynt_Morning.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Grieg__Peer_Gynt_Morning.mid; sourceTree = "<group>"; };
+		A98FB583153B2C5F00D9E5E7 /* Handel__Sarabande_in_D_minor.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Handel__Sarabande_in_D_minor.mid; sourceTree = "<group>"; };
+		A98FB584153B2C5F00D9E5E7 /* Liadov__Prelude_Op._11_in_B_minor.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Liadov__Prelude_Op._11_in_B_minor.mid; sourceTree = "<group>"; };
+		A98FB585153B2C5F00D9E5E7 /* MacDowelll__To_a_Wild_Rose.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = MacDowelll__To_a_Wild_Rose.mid; sourceTree = "<group>"; };
+		A98FB586153B2C5F00D9E5E7 /* Massenet__Elegy_in_E_minor.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Massenet__Elegy_in_E_minor.mid; sourceTree = "<group>"; };
+		A98FB587153B2C5F00D9E5E7 /* Mendelssohn__Venetian_Boat_Song_Op._19b_No._6.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Mendelssohn__Venetian_Boat_Song_Op._19b_No._6.mid; sourceTree = "<group>"; };
+		A98FB588153B2C5F00D9E5E7 /* Mendelssohn__Wedding_March.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Mendelssohn__Wedding_March.mid; sourceTree = "<group>"; };
+		A98FB589153B2C5F00D9E5E7 /* Mozart__Aria_from_Don_Giovanni.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Mozart__Aria_from_Don_Giovanni.mid; sourceTree = "<group>"; };
+		A98FB58A153B2C5F00D9E5E7 /* Mozart__Eine_Kleine_Nachtmusik.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Mozart__Eine_Kleine_Nachtmusik.mid; sourceTree = "<group>"; };
+		A98FB58B153B2C5F00D9E5E7 /* Mozart__Fantasy_No._3_in_D_minor.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Mozart__Fantasy_No._3_in_D_minor.mid; sourceTree = "<group>"; };
+		A98FB58C153B2C5F00D9E5E7 /* Mozart__Minuet_from_Don_Juan.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Mozart__Minuet_from_Don_Juan.mid; sourceTree = "<group>"; };
+		A98FB58D153B2C5F00D9E5E7 /* Mozart__Rondo_Alla_Turca.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Mozart__Rondo_Alla_Turca.mid; sourceTree = "<group>"; };
+		A98FB58E153B2C5F00D9E5E7 /* Mozart__Sonata_K.545_in_C_major.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Mozart__Sonata_K.545_in_C_major.mid; sourceTree = "<group>"; };
+		A98FB58F153B2C5F00D9E5E7 /* Offenbach__Barcarolle_from_The_Tales_of_Hoffmann.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Offenbach__Barcarolle_from_The_Tales_of_Hoffmann.mid; sourceTree = "<group>"; };
+		A98FB590153B2C5F00D9E5E7 /* Pachelbel__Canon_in_D_major.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Pachelbel__Canon_in_D_major.mid; sourceTree = "<group>"; };
+		A98FB591153B2C5F00D9E5E7 /* Prokofiev__Peter_and_the_Wolf.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Prokofiev__Peter_and_the_Wolf.mid; sourceTree = "<group>"; };
+		A98FB592153B2C5F00D9E5E7 /* Puccini__O_Mio_Babbino_Caro.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Puccini__O_Mio_Babbino_Caro.mid; sourceTree = "<group>"; };
+		A98FB593153B2C5F00D9E5E7 /* Rebikov__Valse_Melancolique_Op._2_No._3.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Rebikov__Valse_Melancolique_Op._2_No._3.mid; sourceTree = "<group>"; };
+		A98FB594153B2C5F00D9E5E7 /* Saint-Saens__The_Swan.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Saint-Saens__The_Swan.mid"; sourceTree = "<group>"; };
+		A98FB595153B2C5F00D9E5E7 /* Satie__Gnossienne_No._1.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Satie__Gnossienne_No._1.mid; sourceTree = "<group>"; };
+		A98FB596153B2C5F00D9E5E7 /* Satie__Gymnopedie_No._1.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Satie__Gymnopedie_No._1.mid; sourceTree = "<group>"; };
+		A98FB597153B2C5F00D9E5E7 /* Schubert__Impromptu_Op._90_No._4_in_A-flat_major.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Schubert__Impromptu_Op._90_No._4_in_A-flat_major.mid"; sourceTree = "<group>"; };
+		A98FB598153B2C5F00D9E5E7 /* Schubert__Moment_Musicaux_No._1_in_C_major.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Schubert__Moment_Musicaux_No._1_in_C_major.mid; sourceTree = "<group>"; };
+		A98FB599153B2C5F00D9E5E7 /* Schubert__Moment_Musicaux_No._3_in_F_minor.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Schubert__Moment_Musicaux_No._3_in_F_minor.mid; sourceTree = "<group>"; };
+		A98FB59A153B2C5F00D9E5E7 /* Schubert__Serenade_in_D_minor.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Schubert__Serenade_in_D_minor.mid; sourceTree = "<group>"; };
+		A98FB59B153B2C5F00D9E5E7 /* Schumann__Scenes_From_Childhood_Op._15_No._12.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Schumann__Scenes_From_Childhood_Op._15_No._12.mid; sourceTree = "<group>"; };
+		A98FB59C153B2C5F00D9E5E7 /* Schumann__The_Happy_Farmer.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Schumann__The_Happy_Farmer.mid; sourceTree = "<group>"; };
+		A98FB59D153B2C5F00D9E5E7 /* Strauss__The_Blue_Danube_Waltz.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Strauss__The_Blue_Danube_Waltz.mid; sourceTree = "<group>"; };
+		A98FB59E153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Old_French_Song.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Tchaikovsky__Album_for_the_Young_-_Old_French_Song.mid"; sourceTree = "<group>"; };
+		A98FB59F153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Polka.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Tchaikovsky__Album_for_the_Young_-_Polka.mid"; sourceTree = "<group>"; };
+		A98FB5A0153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Waltz.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Tchaikovsky__Album_for_the_Young_-_Waltz.mid"; sourceTree = "<group>"; };
+		A98FB5A1153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Dance_of_the_Reed_Flutes.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Tchaikovsky__Nutcracker_-_Dance_of_the_Reed_Flutes.mid"; sourceTree = "<group>"; };
+		A98FB5A2153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Dance_of_the_Sugar_Plum_Fairies.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Tchaikovsky__Nutcracker_-_Dance_of_the_Sugar_Plum_Fairies.mid"; sourceTree = "<group>"; };
+		A98FB5A3153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_March_of_the_Toy_Soldiers.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Tchaikovsky__Nutcracker_-_March_of_the_Toy_Soldiers.mid"; sourceTree = "<group>"; };
+		A98FB5A4153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Waltz_of_the_Flowers.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Tchaikovsky__Nutcracker_-_Waltz_of_the_Flowers.mid"; sourceTree = "<group>"; };
+		A98FB5A5153B2C5F00D9E5E7 /* Tchaikovsky__Swan_Lake.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Tchaikovsky__Swan_Lake.mid; sourceTree = "<group>"; };
+		A98FB5A6153B2C5F00D9E5E7 /* Verdi__La_Donna_e_Mobile.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = Verdi__La_Donna_e_Mobile.mid; sourceTree = "<group>"; };
+		A98FB5EA153B2C7F00D9E5E7 /* NotePair.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = NotePair.icns; sourceTree = "<group>"; };
+		A98FB5FF153B30AC00D9E5E7 /* UnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98FB600153B30AC00D9E5E7 /* UnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = "<group>"; };
+		A98FB604153B30FA00D9E5E7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A98FB608153B311400D9E5E7 /* UnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98FB5FC153B30AC00D9E5E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98FB605153B30FA00D9E5E7 /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* MidiSheetMusic.app */,
+				A98FB5FF153B30AC00D9E5E7 /* UnitTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* MidiSheetMusic */ = {
+			isa = PBXGroup;
+			children = (
+				A9221A6D153BD9B00066AE54 /* help.rtf */,
+				A98FB608153B311400D9E5E7 /* UnitTest.m */,
+				A98FB604153B30FA00D9E5E7 /* SenTestingKit.framework */,
+				A98FB5EA153B2C7F00D9E5E7 /* NotePair.icns */,
+				A98FB563153B2C5F00D9E5E7 /* songs */,
+				A98FB545153B2BED00D9E5E7 /* bass.png */,
+				A98FB546153B2BED00D9E5E7 /* eight.png */,
+				A98FB547153B2BED00D9E5E7 /* fastforward.png */,
+				A98FB548153B2BED00D9E5E7 /* four.png */,
+				A98FB549153B2BED00D9E5E7 /* nine.png */,
+				A98FB54A153B2BED00D9E5E7 /* pause.png */,
+				A98FB54B153B2BED00D9E5E7 /* play.png */,
+				A98FB54C153B2BED00D9E5E7 /* rewind.png */,
+				A98FB54D153B2BED00D9E5E7 /* six.png */,
+				A98FB54E153B2BED00D9E5E7 /* stop.png */,
+				A98FB54F153B2BED00D9E5E7 /* three.png */,
+				A98FB550153B2BED00D9E5E7 /* treble.png */,
+				A98FB551153B2BED00D9E5E7 /* twelve.png */,
+				A98FB552153B2BED00D9E5E7 /* two.png */,
+				A98FB553153B2BED00D9E5E7 /* volume.png */,
+				A98FB4E3153B2B9800D9E5E7 /* AccidSymbol.h */,
+				A98FB4E4153B2B9800D9E5E7 /* AccidSymbol.m */,
+				A98FB4E5153B2B9800D9E5E7 /* Array.h */,
+				A98FB4E6153B2B9800D9E5E7 /* Array.m */,
+				A98FB4E7153B2B9800D9E5E7 /* BarSymbol.h */,
+				A98FB4E8153B2B9800D9E5E7 /* BarSymbol.m */,
+				A98FB4E9153B2B9800D9E5E7 /* BlankSymbol.h */,
+				A98FB4EA153B2B9800D9E5E7 /* BlankSymbol.m */,
+				A98FB4EB153B2B9800D9E5E7 /* ChordSymbol.h */,
+				A98FB4EC153B2B9800D9E5E7 /* ChordSymbol.m */,
+				A98FB4ED153B2B9800D9E5E7 /* ClefMeasures.h */,
+				A98FB4EE153B2B9800D9E5E7 /* ClefMeasures.m */,
+				A98FB4EF153B2B9800D9E5E7 /* ClefSymbol.h */,
+				A98FB4F0153B2B9800D9E5E7 /* ClefSymbol.m */,
+				A98FB4F1153B2B9800D9E5E7 /* FlippedView.h */,
+				A98FB4F2153B2B9800D9E5E7 /* FlippedView.m */,
+				A98FB4F3153B2B9800D9E5E7 /* InstrumentDialog.h */,
+				A98FB4F4153B2B9800D9E5E7 /* InstrumentDialog.m */,
+				A98FB4F5153B2B9800D9E5E7 /* KeySignature.h */,
+				A98FB4F6153B2B9800D9E5E7 /* KeySignature.m */,
+				A98FB4F7153B2B9800D9E5E7 /* LyricSymbol.h */,
+				A98FB4F8153B2B9800D9E5E7 /* LyricSymbol.m */,
+				A98FB4F9153B2B9800D9E5E7 /* MidiEvent.h */,
+				A98FB4FA153B2B9800D9E5E7 /* MidiEvent.m */,
+				A98FB4FB153B2B9800D9E5E7 /* MidiFile.h */,
+				A98FB4FC153B2B9800D9E5E7 /* MidiFile.m */,
+				A98FB4FD153B2B9800D9E5E7 /* MidiFileException.h */,
+				A98FB4FE153B2B9800D9E5E7 /* MidiFileException.m */,
+				A98FB4FF153B2B9800D9E5E7 /* MidiFileReader.h */,
+				A98FB500153B2B9800D9E5E7 /* MidiFileReader.m */,
+				A98FB501153B2B9800D9E5E7 /* MidiNote.h */,
+				A98FB502153B2B9800D9E5E7 /* MidiNote.m */,
+				A98FB503153B2B9800D9E5E7 /* MidiOptions.h */,
+				A98FB504153B2B9800D9E5E7 /* MidiPlayer.h */,
+				A98FB505153B2B9800D9E5E7 /* MidiPlayer.m */,
+				A98FB506153B2B9800D9E5E7 /* MidiSheetMusic.h */,
+				A98FB507153B2B9800D9E5E7 /* MidiSheetMusic.m */,
+				A98FB508153B2B9800D9E5E7 /* MidiTrack.h */,
+				A98FB509153B2B9800D9E5E7 /* MidiTrack.m */,
+				A98FB50A153B2B9800D9E5E7 /* MusicSymbol.h */,
+				A98FB50B153B2B9800D9E5E7 /* NoteColorDialog.h */,
+				A98FB50C153B2B9800D9E5E7 /* NoteColorDialog.m */,
+				A98FB50D153B2B9800D9E5E7 /* Piano.h */,
+				A98FB50E153B2B9800D9E5E7 /* Piano.m */,
+				A98FB50F153B2B9800D9E5E7 /* PlayMeasuresDialog.h */,
+				A98FB510153B2B9800D9E5E7 /* PlayMeasuresDialog.m */,
+				A98FB511153B2B9800D9E5E7 /* RestSymbol.h */,
+				A98FB512153B2B9800D9E5E7 /* RestSymbol.m */,
+				A98FB513153B2B9800D9E5E7 /* SampleSongDialog.h */,
+				A98FB514153B2B9800D9E5E7 /* SampleSongDialog.m */,
+				A98FB515153B2B9800D9E5E7 /* SheetMusic.h */,
+				A98FB516153B2B9800D9E5E7 /* SheetMusic.m */,
+				A98FB517153B2B9800D9E5E7 /* SheetMusicWindow.h */,
+				A98FB518153B2B9800D9E5E7 /* SheetMusicWindow.m */,
+				A98FB519153B2B9800D9E5E7 /* Staff.h */,
+				A98FB51A153B2B9800D9E5E7 /* Staff.m */,
+				A98FB51B153B2B9800D9E5E7 /* Stem.h */,
+				A98FB51C153B2B9800D9E5E7 /* Stem.m */,
+				A98FB51D153B2B9800D9E5E7 /* SymbolWidths.h */,
+				A98FB51E153B2B9800D9E5E7 /* SymbolWidths.m */,
+				A98FB51F153B2B9800D9E5E7 /* TimeSignature.h */,
+				A98FB520153B2B9800D9E5E7 /* TimeSignature.m */,
+				A98FB521153B2B9800D9E5E7 /* TimeSigSymbol.h */,
+				A98FB522153B2B9800D9E5E7 /* TimeSigSymbol.m */,
+				A98FB523153B2B9800D9E5E7 /* WhiteNote.h */,
+				A98FB524153B2B9800D9E5E7 /* WhiteNote.m */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				A98FB600153B30AC00D9E5E7 /* UnitTest-Info.plist */,
+			);
+			name = MidiSheetMusic;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MidiSheetMusic_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A98FB563153B2C5F00D9E5E7 /* songs */ = {
+			isa = PBXGroup;
+			children = (
+				A98FB564153B2C5F00D9E5E7 /* Bach__Invention_No._13.mid */,
+				A98FB565153B2C5F00D9E5E7 /* Bach__Minuet_in_G_major.mid */,
+				A98FB566153B2C5F00D9E5E7 /* Bach__Musette_in_D_major.mid */,
+				A98FB567153B2C5F00D9E5E7 /* Bach__Prelude_in_C_major.mid */,
+				A98FB568153B2C5F00D9E5E7 /* Beethoven__Fur_Elise.mid */,
+				A98FB569153B2C5F00D9E5E7 /* Beethoven__Minuet_in_G_major.mid */,
+				A98FB56A153B2C5F00D9E5E7 /* Beethoven__Moonlight_Sonata.mid */,
+				A98FB56B153B2C5F00D9E5E7 /* Beethoven__Sonata_Pathetique_2nd_Mov.mid */,
+				A98FB56C153B2C5F00D9E5E7 /* Bizet__Habanera_from_Carmen.mid */,
+				A98FB56D153B2C5F00D9E5E7 /* Borodin__Polovstian_Dance.mid */,
+				A98FB56E153B2C5F00D9E5E7 /* Brahms__Hungarian_Dance_No._5.mid */,
+				A98FB56F153B2C5F00D9E5E7 /* Brahms__Waltz_No._15_in_A-flat_major.mid */,
+				A98FB570153B2C5F00D9E5E7 /* Brahms__Waltz_No._9_in_D_minor.mid */,
+				A98FB571153B2C5F00D9E5E7 /* Chopin__Minute_Waltz_Op._64_No._1_in_D-flat_major.mid */,
+				A98FB572153B2C5F00D9E5E7 /* Chopin__Nocturne_in_C_minor.mid */,
+				A98FB573153B2C5F00D9E5E7 /* Chopin__Nocturne_Op._9_No._1_in_B-flat_minor.mid */,
+				A98FB574153B2C5F00D9E5E7 /* Chopin__Nocturne_Op._9_No._2_in_E-flat_major.mid */,
+				A98FB575153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._20_in_C_minor.mid */,
+				A98FB576153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._4_in_E_minor.mid */,
+				A98FB577153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._6_in_B_minor.mid */,
+				A98FB578153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._7_in_A_major.mid */,
+				A98FB579153B2C5F00D9E5E7 /* Chopin__Waltz_Op._64_No._2_in_Csharp_minor.mid */,
+				A98FB57A153B2C5F00D9E5E7 /* Clementi__Sonatina_Op._36_No._1.mid */,
+				A98FB57B153B2C5F00D9E5E7 /* Easy_Songs__Brahms_Lullaby.mid */,
+				A98FB57C153B2C5F00D9E5E7 /* Easy_Songs__Greensleeves.mid */,
+				A98FB57D153B2C5F00D9E5E7 /* Easy_Songs__Jingle_Bells.mid */,
+				A98FB57E153B2C5F00D9E5E7 /* Easy_Songs__Silent_Night.mid */,
+				A98FB57F153B2C5F00D9E5E7 /* Easy_Songs__Twinkle_Twinkle_Little_Star.mid */,
+				A98FB580153B2C5F00D9E5E7 /* Field__Nocturne_in_B-flat_major.mid */,
+				A98FB581153B2C5F00D9E5E7 /* Grieg__Canon_Op._38_No._8.mid */,
+				A98FB582153B2C5F00D9E5E7 /* Grieg__Peer_Gynt_Morning.mid */,
+				A98FB583153B2C5F00D9E5E7 /* Handel__Sarabande_in_D_minor.mid */,
+				A98FB584153B2C5F00D9E5E7 /* Liadov__Prelude_Op._11_in_B_minor.mid */,
+				A98FB585153B2C5F00D9E5E7 /* MacDowelll__To_a_Wild_Rose.mid */,
+				A98FB586153B2C5F00D9E5E7 /* Massenet__Elegy_in_E_minor.mid */,
+				A98FB587153B2C5F00D9E5E7 /* Mendelssohn__Venetian_Boat_Song_Op._19b_No._6.mid */,
+				A98FB588153B2C5F00D9E5E7 /* Mendelssohn__Wedding_March.mid */,
+				A98FB589153B2C5F00D9E5E7 /* Mozart__Aria_from_Don_Giovanni.mid */,
+				A98FB58A153B2C5F00D9E5E7 /* Mozart__Eine_Kleine_Nachtmusik.mid */,
+				A98FB58B153B2C5F00D9E5E7 /* Mozart__Fantasy_No._3_in_D_minor.mid */,
+				A98FB58C153B2C5F00D9E5E7 /* Mozart__Minuet_from_Don_Juan.mid */,
+				A98FB58D153B2C5F00D9E5E7 /* Mozart__Rondo_Alla_Turca.mid */,
+				A98FB58E153B2C5F00D9E5E7 /* Mozart__Sonata_K.545_in_C_major.mid */,
+				A98FB58F153B2C5F00D9E5E7 /* Offenbach__Barcarolle_from_The_Tales_of_Hoffmann.mid */,
+				A98FB590153B2C5F00D9E5E7 /* Pachelbel__Canon_in_D_major.mid */,
+				A98FB591153B2C5F00D9E5E7 /* Prokofiev__Peter_and_the_Wolf.mid */,
+				A98FB592153B2C5F00D9E5E7 /* Puccini__O_Mio_Babbino_Caro.mid */,
+				A98FB593153B2C5F00D9E5E7 /* Rebikov__Valse_Melancolique_Op._2_No._3.mid */,
+				A98FB594153B2C5F00D9E5E7 /* Saint-Saens__The_Swan.mid */,
+				A98FB595153B2C5F00D9E5E7 /* Satie__Gnossienne_No._1.mid */,
+				A98FB596153B2C5F00D9E5E7 /* Satie__Gymnopedie_No._1.mid */,
+				A98FB597153B2C5F00D9E5E7 /* Schubert__Impromptu_Op._90_No._4_in_A-flat_major.mid */,
+				A98FB598153B2C5F00D9E5E7 /* Schubert__Moment_Musicaux_No._1_in_C_major.mid */,
+				A98FB599153B2C5F00D9E5E7 /* Schubert__Moment_Musicaux_No._3_in_F_minor.mid */,
+				A98FB59A153B2C5F00D9E5E7 /* Schubert__Serenade_in_D_minor.mid */,
+				A98FB59B153B2C5F00D9E5E7 /* Schumann__Scenes_From_Childhood_Op._15_No._12.mid */,
+				A98FB59C153B2C5F00D9E5E7 /* Schumann__The_Happy_Farmer.mid */,
+				A98FB59D153B2C5F00D9E5E7 /* Strauss__The_Blue_Danube_Waltz.mid */,
+				A98FB59E153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Old_French_Song.mid */,
+				A98FB59F153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Polka.mid */,
+				A98FB5A0153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Waltz.mid */,
+				A98FB5A1153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Dance_of_the_Reed_Flutes.mid */,
+				A98FB5A2153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Dance_of_the_Sugar_Plum_Fairies.mid */,
+				A98FB5A3153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_March_of_the_Toy_Soldiers.mid */,
+				A98FB5A4153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Waltz_of_the_Flowers.mid */,
+				A98FB5A5153B2C5F00D9E5E7 /* Tchaikovsky__Swan_Lake.mid */,
+				A98FB5A6153B2C5F00D9E5E7 /* Verdi__La_Donna_e_Mobile.mid */,
+			);
+			path = songs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* MidiSheetMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MidiSheetMusic" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MidiSheetMusic;
+			productInstallPath = "$(HOME)/Applications";
+			productName = MidiSheetMusic;
+			productReference = 8D1107320486CEB800E47090 /* MidiSheetMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A98FB5FE153B30AC00D9E5E7 /* UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98FB603153B30AD00D9E5E7 /* Build configuration list for PBXNativeTarget "UnitTest" */;
+			buildPhases = (
+				A98FB5FA153B30AC00D9E5E7 /* Resources */,
+				A98FB5FB153B30AC00D9E5E7 /* Sources */,
+				A98FB5FC153B30AC00D9E5E7 /* Frameworks */,
+				A98FB5FD153B30AC00D9E5E7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTest;
+			productName = UnitTest;
+			productReference = A98FB5FF153B30AC00D9E5E7 /* UnitTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MidiSheetMusic" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* MidiSheetMusic */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* MidiSheetMusic */,
+				A98FB5FE153B30AC00D9E5E7 /* UnitTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				A98FB554153B2BED00D9E5E7 /* bass.png in Resources */,
+				A98FB555153B2BED00D9E5E7 /* eight.png in Resources */,
+				A98FB556153B2BED00D9E5E7 /* fastforward.png in Resources */,
+				A98FB557153B2BED00D9E5E7 /* four.png in Resources */,
+				A98FB558153B2BED00D9E5E7 /* nine.png in Resources */,
+				A98FB559153B2BED00D9E5E7 /* pause.png in Resources */,
+				A98FB55A153B2BED00D9E5E7 /* play.png in Resources */,
+				A98FB55B153B2BED00D9E5E7 /* rewind.png in Resources */,
+				A98FB55C153B2BED00D9E5E7 /* six.png in Resources */,
+				A98FB55D153B2BED00D9E5E7 /* stop.png in Resources */,
+				A98FB55E153B2BED00D9E5E7 /* three.png in Resources */,
+				A98FB55F153B2BED00D9E5E7 /* treble.png in Resources */,
+				A98FB560153B2BED00D9E5E7 /* twelve.png in Resources */,
+				A98FB561153B2BED00D9E5E7 /* two.png in Resources */,
+				A98FB562153B2BED00D9E5E7 /* volume.png in Resources */,
+				A98FB5A7153B2C5F00D9E5E7 /* Bach__Invention_No._13.mid in Resources */,
+				A98FB5A8153B2C5F00D9E5E7 /* Bach__Minuet_in_G_major.mid in Resources */,
+				A98FB5A9153B2C5F00D9E5E7 /* Bach__Musette_in_D_major.mid in Resources */,
+				A98FB5AA153B2C5F00D9E5E7 /* Bach__Prelude_in_C_major.mid in Resources */,
+				A98FB5AB153B2C5F00D9E5E7 /* Beethoven__Fur_Elise.mid in Resources */,
+				A98FB5AC153B2C5F00D9E5E7 /* Beethoven__Minuet_in_G_major.mid in Resources */,
+				A98FB5AD153B2C5F00D9E5E7 /* Beethoven__Moonlight_Sonata.mid in Resources */,
+				A98FB5AE153B2C5F00D9E5E7 /* Beethoven__Sonata_Pathetique_2nd_Mov.mid in Resources */,
+				A98FB5AF153B2C5F00D9E5E7 /* Bizet__Habanera_from_Carmen.mid in Resources */,
+				A98FB5B0153B2C5F00D9E5E7 /* Borodin__Polovstian_Dance.mid in Resources */,
+				A98FB5B1153B2C5F00D9E5E7 /* Brahms__Hungarian_Dance_No._5.mid in Resources */,
+				A98FB5B2153B2C5F00D9E5E7 /* Brahms__Waltz_No._15_in_A-flat_major.mid in Resources */,
+				A98FB5B3153B2C5F00D9E5E7 /* Brahms__Waltz_No._9_in_D_minor.mid in Resources */,
+				A98FB5B4153B2C5F00D9E5E7 /* Chopin__Minute_Waltz_Op._64_No._1_in_D-flat_major.mid in Resources */,
+				A98FB5B5153B2C5F00D9E5E7 /* Chopin__Nocturne_in_C_minor.mid in Resources */,
+				A98FB5B6153B2C5F00D9E5E7 /* Chopin__Nocturne_Op._9_No._1_in_B-flat_minor.mid in Resources */,
+				A98FB5B7153B2C5F00D9E5E7 /* Chopin__Nocturne_Op._9_No._2_in_E-flat_major.mid in Resources */,
+				A98FB5B8153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._20_in_C_minor.mid in Resources */,
+				A98FB5B9153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._4_in_E_minor.mid in Resources */,
+				A98FB5BA153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._6_in_B_minor.mid in Resources */,
+				A98FB5BB153B2C5F00D9E5E7 /* Chopin__Prelude_Op._28_No._7_in_A_major.mid in Resources */,
+				A98FB5BC153B2C5F00D9E5E7 /* Chopin__Waltz_Op._64_No._2_in_Csharp_minor.mid in Resources */,
+				A98FB5BD153B2C5F00D9E5E7 /* Clementi__Sonatina_Op._36_No._1.mid in Resources */,
+				A98FB5BE153B2C5F00D9E5E7 /* Easy_Songs__Brahms_Lullaby.mid in Resources */,
+				A98FB5BF153B2C5F00D9E5E7 /* Easy_Songs__Greensleeves.mid in Resources */,
+				A98FB5C0153B2C5F00D9E5E7 /* Easy_Songs__Jingle_Bells.mid in Resources */,
+				A98FB5C1153B2C5F00D9E5E7 /* Easy_Songs__Silent_Night.mid in Resources */,
+				A98FB5C2153B2C5F00D9E5E7 /* Easy_Songs__Twinkle_Twinkle_Little_Star.mid in Resources */,
+				A98FB5C3153B2C5F00D9E5E7 /* Field__Nocturne_in_B-flat_major.mid in Resources */,
+				A98FB5C4153B2C5F00D9E5E7 /* Grieg__Canon_Op._38_No._8.mid in Resources */,
+				A98FB5C5153B2C5F00D9E5E7 /* Grieg__Peer_Gynt_Morning.mid in Resources */,
+				A98FB5C6153B2C5F00D9E5E7 /* Handel__Sarabande_in_D_minor.mid in Resources */,
+				A98FB5C7153B2C5F00D9E5E7 /* Liadov__Prelude_Op._11_in_B_minor.mid in Resources */,
+				A98FB5C8153B2C5F00D9E5E7 /* MacDowelll__To_a_Wild_Rose.mid in Resources */,
+				A98FB5C9153B2C5F00D9E5E7 /* Massenet__Elegy_in_E_minor.mid in Resources */,
+				A98FB5CA153B2C5F00D9E5E7 /* Mendelssohn__Venetian_Boat_Song_Op._19b_No._6.mid in Resources */,
+				A98FB5CB153B2C5F00D9E5E7 /* Mendelssohn__Wedding_March.mid in Resources */,
+				A98FB5CC153B2C5F00D9E5E7 /* Mozart__Aria_from_Don_Giovanni.mid in Resources */,
+				A98FB5CD153B2C5F00D9E5E7 /* Mozart__Eine_Kleine_Nachtmusik.mid in Resources */,
+				A98FB5CE153B2C5F00D9E5E7 /* Mozart__Fantasy_No._3_in_D_minor.mid in Resources */,
+				A98FB5CF153B2C5F00D9E5E7 /* Mozart__Minuet_from_Don_Juan.mid in Resources */,
+				A98FB5D0153B2C5F00D9E5E7 /* Mozart__Rondo_Alla_Turca.mid in Resources */,
+				A98FB5D1153B2C5F00D9E5E7 /* Mozart__Sonata_K.545_in_C_major.mid in Resources */,
+				A98FB5D2153B2C5F00D9E5E7 /* Offenbach__Barcarolle_from_The_Tales_of_Hoffmann.mid in Resources */,
+				A98FB5D3153B2C5F00D9E5E7 /* Pachelbel__Canon_in_D_major.mid in Resources */,
+				A98FB5D4153B2C5F00D9E5E7 /* Prokofiev__Peter_and_the_Wolf.mid in Resources */,
+				A98FB5D5153B2C5F00D9E5E7 /* Puccini__O_Mio_Babbino_Caro.mid in Resources */,
+				A98FB5D6153B2C5F00D9E5E7 /* Rebikov__Valse_Melancolique_Op._2_No._3.mid in Resources */,
+				A98FB5D7153B2C5F00D9E5E7 /* Saint-Saens__The_Swan.mid in Resources */,
+				A98FB5D8153B2C5F00D9E5E7 /* Satie__Gnossienne_No._1.mid in Resources */,
+				A98FB5D9153B2C5F00D9E5E7 /* Satie__Gymnopedie_No._1.mid in Resources */,
+				A98FB5DA153B2C5F00D9E5E7 /* Schubert__Impromptu_Op._90_No._4_in_A-flat_major.mid in Resources */,
+				A98FB5DB153B2C5F00D9E5E7 /* Schubert__Moment_Musicaux_No._1_in_C_major.mid in Resources */,
+				A98FB5DC153B2C5F00D9E5E7 /* Schubert__Moment_Musicaux_No._3_in_F_minor.mid in Resources */,
+				A98FB5DD153B2C5F00D9E5E7 /* Schubert__Serenade_in_D_minor.mid in Resources */,
+				A98FB5DE153B2C5F00D9E5E7 /* Schumann__Scenes_From_Childhood_Op._15_No._12.mid in Resources */,
+				A98FB5DF153B2C5F00D9E5E7 /* Schumann__The_Happy_Farmer.mid in Resources */,
+				A98FB5E0153B2C5F00D9E5E7 /* Strauss__The_Blue_Danube_Waltz.mid in Resources */,
+				A98FB5E1153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Old_French_Song.mid in Resources */,
+				A98FB5E2153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Polka.mid in Resources */,
+				A98FB5E3153B2C5F00D9E5E7 /* Tchaikovsky__Album_for_the_Young_-_Waltz.mid in Resources */,
+				A98FB5E4153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Dance_of_the_Reed_Flutes.mid in Resources */,
+				A98FB5E5153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Dance_of_the_Sugar_Plum_Fairies.mid in Resources */,
+				A98FB5E6153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_March_of_the_Toy_Soldiers.mid in Resources */,
+				A98FB5E7153B2C5F00D9E5E7 /* Tchaikovsky__Nutcracker_-_Waltz_of_the_Flowers.mid in Resources */,
+				A98FB5E8153B2C5F00D9E5E7 /* Tchaikovsky__Swan_Lake.mid in Resources */,
+				A98FB5E9153B2C5F00D9E5E7 /* Verdi__La_Donna_e_Mobile.mid in Resources */,
+				A98FB5EB153B2C7F00D9E5E7 /* NotePair.icns in Resources */,
+				A9221A6E153BD9B00066AE54 /* help.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98FB5FA153B30AC00D9E5E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A98FB5FD153B30AC00D9E5E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				A98FB525153B2B9800D9E5E7 /* AccidSymbol.m in Sources */,
+				A98FB526153B2B9800D9E5E7 /* Array.m in Sources */,
+				A98FB527153B2B9800D9E5E7 /* BarSymbol.m in Sources */,
+				A98FB528153B2B9800D9E5E7 /* BlankSymbol.m in Sources */,
+				A98FB529153B2B9800D9E5E7 /* ChordSymbol.m in Sources */,
+				A98FB52A153B2B9800D9E5E7 /* ClefMeasures.m in Sources */,
+				A98FB52B153B2B9800D9E5E7 /* ClefSymbol.m in Sources */,
+				A98FB52C153B2B9800D9E5E7 /* FlippedView.m in Sources */,
+				A98FB52D153B2B9800D9E5E7 /* InstrumentDialog.m in Sources */,
+				A98FB52E153B2B9800D9E5E7 /* KeySignature.m in Sources */,
+				A98FB52F153B2B9800D9E5E7 /* LyricSymbol.m in Sources */,
+				A98FB530153B2B9800D9E5E7 /* MidiEvent.m in Sources */,
+				A98FB531153B2B9800D9E5E7 /* MidiFile.m in Sources */,
+				A98FB532153B2B9800D9E5E7 /* MidiFileException.m in Sources */,
+				A98FB533153B2B9800D9E5E7 /* MidiFileReader.m in Sources */,
+				A98FB534153B2B9800D9E5E7 /* MidiNote.m in Sources */,
+				A98FB535153B2B9800D9E5E7 /* MidiPlayer.m in Sources */,
+				A98FB536153B2B9800D9E5E7 /* MidiSheetMusic.m in Sources */,
+				A98FB537153B2B9800D9E5E7 /* MidiTrack.m in Sources */,
+				A98FB538153B2B9800D9E5E7 /* NoteColorDialog.m in Sources */,
+				A98FB539153B2B9800D9E5E7 /* Piano.m in Sources */,
+				A98FB53A153B2B9800D9E5E7 /* PlayMeasuresDialog.m in Sources */,
+				A98FB53B153B2B9800D9E5E7 /* RestSymbol.m in Sources */,
+				A98FB53C153B2B9800D9E5E7 /* SampleSongDialog.m in Sources */,
+				A98FB53D153B2B9800D9E5E7 /* SheetMusic.m in Sources */,
+				A98FB53E153B2B9800D9E5E7 /* SheetMusicWindow.m in Sources */,
+				A98FB53F153B2B9800D9E5E7 /* Staff.m in Sources */,
+				A98FB540153B2B9800D9E5E7 /* Stem.m in Sources */,
+				A98FB541153B2B9800D9E5E7 /* SymbolWidths.m in Sources */,
+				A98FB542153B2B9800D9E5E7 /* TimeSignature.m in Sources */,
+				A98FB543153B2B9800D9E5E7 /* TimeSigSymbol.m in Sources */,
+				A98FB544153B2B9800D9E5E7 /* WhiteNote.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98FB5FB153B30AC00D9E5E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98FB631153B320000D9E5E7 /* Staff.m in Sources */,
+				A98FB62C153B31ED00D9E5E7 /* SheetMusic.m in Sources */,
+				A98FB60B153B31AB00D9E5E7 /* AccidSymbol.m in Sources */,
+				A98FB60C153B31AB00D9E5E7 /* Array.m in Sources */,
+				A98FB60D153B31AB00D9E5E7 /* BarSymbol.m in Sources */,
+				A98FB60E153B31AB00D9E5E7 /* BlankSymbol.m in Sources */,
+				A98FB60F153B31AB00D9E5E7 /* ChordSymbol.m in Sources */,
+				A98FB610153B31AB00D9E5E7 /* ClefMeasures.m in Sources */,
+				A98FB611153B31AB00D9E5E7 /* ClefSymbol.m in Sources */,
+				A98FB612153B31AB00D9E5E7 /* KeySignature.m in Sources */,
+				A98FB613153B31AB00D9E5E7 /* LyricSymbol.m in Sources */,
+				A98FB614153B31AB00D9E5E7 /* MidiEvent.m in Sources */,
+				A98FB615153B31AB00D9E5E7 /* MidiFile.m in Sources */,
+				A98FB616153B31AB00D9E5E7 /* MidiFileException.m in Sources */,
+				A98FB617153B31AB00D9E5E7 /* MidiFileReader.m in Sources */,
+				A98FB618153B31AB00D9E5E7 /* MidiNote.m in Sources */,
+				A98FB619153B31AB00D9E5E7 /* MidiTrack.m in Sources */,
+				A98FB61A153B31AB00D9E5E7 /* RestSymbol.m in Sources */,
+				A98FB61B153B31AB00D9E5E7 /* Stem.m in Sources */,
+				A98FB61C153B31AB00D9E5E7 /* SymbolWidths.m in Sources */,
+				A98FB61D153B31AB00D9E5E7 /* TimeSignature.m in Sources */,
+				A98FB61E153B31AB00D9E5E7 /* TimeSigSymbol.m in Sources */,
+				A98FB61F153B31AB00D9E5E7 /* WhiteNote.m in Sources */,
+				A98FB609153B311400D9E5E7 /* UnitTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A98FB601153B30AD00D9E5E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "UnitTest-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTest;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A98FB602153B30AD00D9E5E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "UnitTest-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTest;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MidiSheetMusic_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = MidiSheetMusic;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MidiSheetMusic_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = MidiSheetMusic;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A98FB603153B30AD00D9E5E7 /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98FB601153B30AD00D9E5E7 /* Debug */,
+				A98FB602153B30AD00D9E5E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MidiSheetMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MidiSheetMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
